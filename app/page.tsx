@@ -1,32 +1,50 @@
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-black text-white">
-      <section className="flex min-h-screen flex-col items-center justify-center px-6 text-center">
-        <p className="mb-4 text-sm uppercase tracking-[0.3em] text-zinc-400">
-          Nepal's Creator Platform
+    <main className="min-h-screen bg-black text-white overflow-hidden">
+      <section className="relative flex min-h-screen flex-col items-center justify-center px-6 text-center">
+
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.08),transparent_45%)]" />
+
+        <p className="mb-6 text-xs uppercase tracking-[0.45em] text-zinc-400">
+          Nepal’s Creator Platform
         </p>
 
-        <h1 className="max-w-5xl text-6xl font-bold tracking-tight md:text-8xl">
-          MeroBlog
+        <h1 className="text-7xl font-bold tracking-tight md:text-9xl">
+          Mero<span className="text-zinc-500">Blog</span>
         </h1>
 
-        <p className="mt-6 max-w-2xl text-xl text-zinc-300 md:text-2xl">
+        <p className="mt-8 max-w-3xl text-2xl font-light text-zinc-200 md:text-4xl">
           Write. Share. Inspire Nepal.
         </p>
 
-        <p className="mt-8 max-w-3xl text-zinc-500 text-lg">
-          The home of Nepali digital creators. Publish stories, share ideas,
-          build your audience, and shape Nepal’s digital future.
+        <p className="mt-8 max-w-2xl text-lg leading-8 text-zinc-400">
+          A modern publishing platform for Nepali creators to tell stories,
+          build audiences, and shape the future of digital Nepal.
         </p>
 
-        <div className="mt-12 flex gap-4">
-          <button className="rounded-full bg-white px-8 py-4 text-black font-semibold hover:bg-zinc-200">
+        <div className="mt-14 flex flex-col gap-4 sm:flex-row">
+          <button className="rounded-full bg-white px-10 py-4 text-lg font-semibold text-black transition hover:scale-105">
             Start Writing
           </button>
 
-          <button className="rounded-full border border-zinc-700 px-8 py-4 hover:border-zinc-500">
+          <button className="rounded-full border border-zinc-700 px-10 py-4 text-lg transition hover:border-zinc-400">
             Explore Stories
           </button>
+        </div>
+
+        <div className="mt-20 grid grid-cols-3 gap-10 text-center text-zinc-500">
+          <div>
+            <p className="text-3xl font-bold text-white">10K+</p>
+            <p>Future Creators</p>
+          </div>
+          <div>
+            <p className="text-3xl font-bold text-white">∞</p>
+            <p>Stories to Share</p>
+          </div>
+          <div>
+            <p className="text-3xl font-bold text-white">1 Vision</p>
+            <p>Digital Nepal</p>
+          </div>
         </div>
       </section>
     </main>
